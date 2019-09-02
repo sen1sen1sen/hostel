@@ -1,0 +1,368 @@
+body 
+	font-family: Arial, Helvetica, sans-serif
+	max-width: 1920px
+	min-width: 320px
+
+.wrap
+	width: 80%
+	margin: 0 auto
+i
+	position: absolute
+	padding: 10px
+	background-color: #000
+	color: #fff
+	display: inline-block
+	font: normal normal normal 60px/1 FontAwesome
+	font-size: 60px
+	text-rendering: auto
+	-webkit-font-smoothing: antialiased
+	width: 70px
+		
+.flex_container
+	display: flex
+	flex-direction: column
+
+.topnav 
+	overflow: hidden
+	background-color: #f4f4f4
+	position: fixed
+	left: 0
+	top: 70px
+	width: 280px
+	height: 100%
+	ul
+		list-style-type: none
+		padding: 0
+		a
+			li
+				border-bottom: 1px solid #e0e0e0
+				span
+					font-size: 15px
+					text-transform: uppercase
+					color: #3e3e42
+			li.active
+				border-left: 3px solid green
+				background-color: #ebebeb
+				span
+					color:  #009542
+				button
+					background-color: #ebebeb
+			li:hover
+				background-color: #ebebeb
+				button
+					background-color: #ebebeb
+	
+	.icon 
+		display: none
+	button
+		border: none
+		background-color: #f4f4f4
+		padding: 10px 15px
+		cursor: pointer
+
+.main
+	margin-left: 281px
+
+.top_menu
+	display: flex
+	max-width: 1619px
+	height: 100px
+	background-color: #fff
+	.eng
+		background-color: #312a28
+		border: none
+		width: 70px	
+		height: 100px
+		float: left
+		padding-top: 10px
+		cursor: pointer
+		p
+			font-family: sans-serif
+			font-size: 14px
+			text-decoration: underline
+			color: #7f7f86
+			padding-top: 10px
+	.search
+		width: 70px
+		height: 100px
+		background-color: #009542
+		border: none
+		cursor: pointer	
+	input
+		-webkit-transition: width 1.4s ease-in-out
+		transition: width 1.4s ease-in-out
+		background-image: url("../svg/search.svg")
+		background-position: center center
+		background-repeat: no-repeat
+		color: #fff
+	input::placeholder
+		color: transparent
+	input:hover::placeholder
+		color: #fff
+	input:hover
+		width: 20%
+		position: absolute
+		background-position: right 30px center
+	input:focus
+		width: 20%
+		position: absolute
+		background-position: right 30px center
+
+.top_menu_contacts
+	width: 100%
+	display: flex
+	text-align: right
+	margin: 30px 0
+	.contacts_phone
+		margin-right: 2%
+		margin-left: 1%
+		a
+			font-size: 20px//24px
+			color: #312a28
+			font-family: 'Tahoma'
+			p
+				font-family: 'Raleway'
+				font-size: 12px
+				color: #312a28
+				line-height: 0
+				text-align: end
+
+.contacts_mail
+	margin-top: 7px
+	a
+		svg
+			margin-right: 5px
+		p
+			float: right
+			font-family: 'Raleway'
+			font-size: 15px
+			color: #009542
+
+
+.top_section
+	display: flex
+	banner_right
+		width: 27px
+
+.banner
+	width: 73%
+	background-image: url(../img/main-img_1.jpg) 
+	background-repeat: no-repeat
+	background-position: left center
+	height: 600px
+
+.banner_right
+	display: flex
+
+.banner_right_left
+	display: flex
+	flex-direction: column
+	button
+		width: 100px
+		height: 100px
+		background-color: #32c172
+		border: 0
+		border-bottom: 1px solid #017634
+		cursor: pointer
+
+.banner_right_right
+	display: flex
+	flex-direction: column
+	a
+		font-family: 'Raleway' sans-serif
+		font-size: 20px
+		color: #fff
+		background-color: #009b44
+		border-bottom: 1px solid #017634
+		height: 100px
+		padding: 25px 20px
+
+.main
+	h1
+		text-align: center
+		font-size: 60px
+		color: #00924f
+		margin-top: 50px
+		margin-bottom: 50px
+
+.main 
+	h2
+		text-align: center
+		font-size: 50px
+		color: #00924f
+		margin-top: 200px
+
+
+.tabs
+	display: flex
+	flex-direction: column
+
+.tabs > div
+	
+.tabs
+	ul
+		margin: 0px
+		padding: 0px
+		display: flex
+		justify-content: center
+
+.tabs
+	ul:after
+		content: ""
+		display: block
+		clear: both
+		height: 5px
+		background: #46c765
+
+.tabs 
+	ul 
+		li
+			margin: 0px
+			padding: 0px
+			cursor: pointer
+			display: block
+			float: left
+			padding: 10px 15px
+			background: #e9eaeb
+			color: #707070
+
+.tabs 
+	ul
+		li.active
+			background: #46c765
+			color: #fff
+
+.tabs 
+	ul
+		li.active:hover
+			background: #46c765
+			color: #fff
+
+.tabs
+	ul
+		li:hover
+			background: #d6d6d7
+
+
+.tabs
+	img
+		width: 100%
+
+.image_section
+	height: 200px
+	p
+		text-align: center
+		font-family: 'Thin' sans-serif
+		font-size: 20px //30px
+		color: #26b171
+
+.image_button
+		text-align: center
+		padding-bottom: 50px
+		button
+			background-color: #009542
+			color: #fff
+			font-size: 18px
+			font-family: 'Raleway' sans-serif
+			border: none
+			border-radius: 20px
+			padding: 10px 25px
+			margin-top: 30px
+
+.news_section
+	display: flex
+	
+.owl-nav
+	position: absolute
+	top: -60px
+	right: 0px
+
+.owl-carousel
+	.owl-nav
+		button.owl-prev,
+		button.owl-next
+			width: 40px
+			height: 40px
+			background-color: #12aa55
+			border-radius: 50%
+			span
+				color: #fff
+				font-size: 35px
+				position: absolute
+				top: -7px
+		button.owl-prev
+			margin-right: 15px
+			span
+				
+	
+	
+	
+.news_col
+	font-family: 'Raleway' sans-serif
+	font-size: 15px
+	width: 100%
+	line-height: 15px
+	img
+		width: 90%
+	p
+		color: #666
+		padding-top: 15px
+		margin-bottom: 10px
+	a
+		color: #000
+		text-decoration: underline #27a55f
+
+.footer_line
+	border-bottom: 1px solid grey
+	margin-top: 20px
+	margin-bottom: 20px
+
+footer
+	display: flex
+	width: 80%
+	margin: 0 auto
+	justify-content: space-between
+
+.footer_address
+	span
+		font-size: 14px
+		color: #666
+		margin-left: 10px
+
+.footer_address_item
+	margin-bottom: 10px
+
+.footer_contacts
+	display: flex
+	span
+		font-size: 18px
+		color: #666
+		margin-left: 5px
+		p
+			font-size: 12px
+			color: #666
+			text-align: center
+
+.footer_contacts_item
+	height: 60px
+
+.footer_item
+	margin-right: 15px
+
+.footer_right
+	align-self: center
+
+.footer_mail_item
+	a
+		display: flex
+		p
+			margin-left: 15px
+
+.footer_item_bottom
+	span
+		font-size: 14px
+		color: #666
+
+.footer_contacts_item
+	a
+		display: flex
